@@ -1,0 +1,52 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /26-springboot
+
+#配置redis的连接信息
+spring:
+  redis:
+    host: 192.168.211.129
+    port: 6379
+    password: 123456
+
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+
+  datasource:
+    userdb:
+      username: root
+      password: root
+      driverClassName: com.mysql.jdbc.Driver
+      jdbcUrl: jdbc:mysql://localhost:3306/idea?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&useSSL=false
+
+    goodsdb:
+      username: root
+      password: root
+      driverClassName: com.mysql.jdbc.Driver
+      jdbcUrl: jdbc:mysql://localhost:3306/goods?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&useSSL=false
+
+    orderdb:
+      username: root
+      password: root
+      driverClassName: com.mysql.jdbc.Driver
+      jdbcUrl: jdbc:mysql://localhost:3306/orders?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&useSSL=false
+
+#自己的starter
+  seven:
+    redis:
+      host: 192.168.211.129
+      port: 6379
+      password: 123456
+
+#自定义配置1
+jgs:
+  seven:
+    name: cat
+    phone: 13700000000
+
+    #自定义配置2
+    email: qupeng7@126.com
+    address: beijing
