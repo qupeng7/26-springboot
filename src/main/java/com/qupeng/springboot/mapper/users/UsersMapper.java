@@ -4,7 +4,7 @@ import com.qupeng.springboot.model.Users;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
-@Mapper  //标记为mybatis的mapper接口
+//@Mapper  //标记为mybatis的mapper接口
 public interface UsersMapper {
     int deleteByPrimaryKey(Integer id);
 
