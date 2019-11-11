@@ -122,6 +122,8 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <!--TODO 如果是打一个jar运行的话,jar包里面有jsp页面,要采用1.4.2版本打包,否则jsp页面无法访问 -->
+                <version>1.4.2.RELEASE</version>
             </plugin>
 
             <!--mybatis代码自动生成插件-->

@@ -1,3 +1,4 @@
+#内嵌tomcat的端口和上下文,如果部署到外部的tomcat中,则该配置不生效
 server:
   port: 8080
   servlet:
